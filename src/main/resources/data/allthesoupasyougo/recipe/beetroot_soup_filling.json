@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "allthesoupasyougo:beetroot_soup",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:beetroot_soup"
+    }
+  ]
+}

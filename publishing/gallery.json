@@ -1,0 +1,23 @@
+[
+  {
+    "file": "01-draining-soup.png",
+    "key": "draining",
+    "title": "Draining beetroot soup",
+    "description": "A bowl of beetroot soup empties into an Item Drain. Each bowl provides 250 mB and leaves an empty bowl behind.",
+    "featured": false
+  },
+  {
+    "file": "02-filling-a-bowl.png",
+    "key": "filling",
+    "title": "Serving pumpkin soup",
+    "description": "A Spout fills a bowl with pumpkin soup from the tank above it.",
+    "featured": true
+  },
+  {
+    "file": "03-soup-kitchen.png",
+    "key": "kitchen",
+    "title": "A tank for every soup",
+    "description": "Minecraft and Farmer's Delight soups, each with its own fluid and bucket, together in a Create kitchen.",
+    "featured": false
+  }
+]

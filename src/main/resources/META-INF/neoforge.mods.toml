@@ -1,0 +1,46 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "All Rights Reserved"
+
+[[mixins]]
+config = "allthesoupasyougo.mixins.json"
+
+[[mods]]
+modId = "allthesoupasyougo"
+version = "${mod_version}"
+displayName = "Create: All the Soup as You Go"
+logoFile = "logo.png"
+logoBlur = false
+authors = "Ender"
+description = '''
+Drain bowl soups into Create tanks and fill bowls again with a Spout.
+Supports the four vanilla soups and nine Farmer's Delight soups and broths when installed.
+'''
+
+[[dependencies.allthesoupasyougo]]
+    modId = "neoforge"
+    type = "required"
+    versionRange = "[21.1.251,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.allthesoupasyougo]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "[1.21.1,1.21.2)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.allthesoupasyougo]]
+    modId = "create"
+    type = "required"
+    versionRange = "[6.0.10,6.0.11)"
+    ordering = "AFTER"
+    side = "BOTH"
+
+[[dependencies.allthesoupasyougo]]
+    modId = "farmersdelight"
+    type = "optional"
+    versionRange = "[1.2.9,)"
+    ordering = "AFTER"
+    side = "BOTH"

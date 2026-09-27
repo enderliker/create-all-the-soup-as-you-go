@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "allthesoupasyougo:item/fish_stew_bucket"
+  }
+}

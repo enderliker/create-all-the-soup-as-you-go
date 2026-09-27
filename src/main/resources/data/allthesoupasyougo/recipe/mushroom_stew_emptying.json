@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "minecraft:mushroom_stew"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:bowl"
+    },
+    {
+      "id": "allthesoupasyougo:mushroom_stew",
+      "amount": 250
+    }
+  ]
+}

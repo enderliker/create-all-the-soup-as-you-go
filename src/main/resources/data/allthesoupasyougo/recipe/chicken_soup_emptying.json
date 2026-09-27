@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "farmersdelight:chicken_soup"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:bowl"
+    },
+    {
+      "id": "allthesoupasyougo:chicken_soup",
+      "amount": 250
+    }
+  ]
+}

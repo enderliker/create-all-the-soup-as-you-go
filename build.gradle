@@ -1,0 +1,79 @@
+plugins {
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+
+version = '1.1.0'
+group = 'com.ender.allthesoupasyougo'
+
+base {
+    archivesName = 'create-all-the-soup-as-you-go'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+// The automated screenshot runner is development tooling, never part of the mod jar.
+if (providers.gradleProperty('showcase').isPresent()) {
+    sourceSets.main.java.srcDir 'src/showcase/java'
+}
+tasks.named('jar', Jar) {
+    exclude 'com/ender/allthesoupasyougo/dev/**'
+    from('LICENSE')
+}
+
+repositories {
+    maven {
+        url = 'https://api.modrinth.com/maven'
+        content {
+            includeGroup 'maven.modrinth'
+        }
+    }
+}
+
+neoForge {
+    version = '21.1.251'
+
+    runs {
+        client {
+            client()
+        }
+        server {
+            server()
+        }
+        showcase {
+            client()
+            systemProperty 'soup.showcase', 'true'
+            systemProperty 'soup.testsOnly', providers.gradleProperty('testsOnly').isPresent().toString()
+            programArguments.addAll '--width', '1600', '--height', '900'
+        }
+    }
+
+    mods {
+        allthesoupasyougo {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+dependencies {
+    implementation 'maven.modrinth:create:6.0.10+mc1.21.1'
+}
+
+// Create ships Catnip in its nested libraries. Make its public types available when compiling.
+configurations { createBundled }
+dependencies {
+    createBundled 'maven.modrinth:create:6.0.10+mc1.21.1'
+    compileOnly fileTree(layout.buildDirectory.dir('create-libraries')) { include '**/*.jar' }
+}
+def extractCreateLibraries = tasks.register('extractCreateLibraries', Sync) {
+    from { zipTree(configurations.createBundled.singleFile) }
+    include 'META-INF/jarjar/*.jar'
+    into layout.buildDirectory.dir('create-libraries')
+}
+tasks.named('compileJava') { dependsOn extractCreateLibraries }
+
+tasks.named('processResources', ProcessResources) {
+    inputs.property 'mod_version', project.version
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand mod_version: project.version
+    }
+}

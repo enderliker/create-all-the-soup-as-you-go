@@ -1,0 +1,4 @@
+File: create-all-the-soup-as-you-go-1.1.0.jar
+SHA256: d11920021d365f52c67a7bb651e62cf5747eb8967ab1224b7c4528eb56ce77ae
+26 Create recipes; 13 separate bucket textures; 26 animated fluid textures; 52 translations per language: PASS
+Mixin configuration present; no development automation classes; license included: PASS

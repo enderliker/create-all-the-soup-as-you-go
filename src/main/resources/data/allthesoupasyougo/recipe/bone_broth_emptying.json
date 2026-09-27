@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "farmersdelight:bone_broth"
+    }
+  ],
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "farmersdelight:bone_broth"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:bowl"
+    },
+    {
+      "id": "allthesoupasyougo:bone_broth",
+      "amount": 250
+    }
+  ]
+}

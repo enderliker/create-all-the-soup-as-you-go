@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.ender.allthesoupasyougo.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["SoupEmptyingMixin", "SoupFillingMixin", "SoupBucketMixin"],
+  "injectors": {"defaultRequire": 1}
+}

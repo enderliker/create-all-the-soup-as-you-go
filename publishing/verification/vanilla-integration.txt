@@ -1,0 +1,7 @@
+Create 6.0.10 / NeoForge 21.1.251
+Suspicious stew: nine effects, multiple effects, empty stew, buckets and mixing: PASS
+Creative search: 4 available buckets; optional buckets hidden when absent: PASS
+mushroom_stew: drain -> 250 mB + bowl; spout -> original soup using 250 mB: PASS
+beetroot_soup: drain -> 250 mB + bowl; spout -> original soup using 250 mB: PASS
+rabbit_stew: drain -> 250 mB + bowl; spout -> original soup using 250 mB: PASS
+suspicious_stew: drain -> 250 mB + bowl; spout -> original soup using 250 mB: PASS

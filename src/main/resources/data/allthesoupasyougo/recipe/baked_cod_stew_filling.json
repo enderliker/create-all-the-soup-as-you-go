@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "type": "neoforge:single",
+      "fluid": "allthesoupasyougo:baked_cod_stew",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "farmersdelight:baked_cod_stew"
+    }
+  ]
+}

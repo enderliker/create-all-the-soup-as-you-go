@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "farmersdelight:beef_stew"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:bowl"
+    },
+    {
+      "id": "allthesoupasyougo:beef_stew",
+      "amount": 250
+    }
+  ]
+}

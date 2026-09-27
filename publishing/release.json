@@ -1,0 +1,12 @@
+{
+  "title": "Create: All the Soup as You Go",
+  "slug": "create-all-the-soup-as-you-go",
+  "version": "1.1.0",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.251",
+  "create": "6.0.10",
+  "farmers_delight_tested": "1.3.4",
+  "jade_tested": "15.10.6",
+  "license": "All Rights Reserved",
+  "summary": "Drain soups into Create tanks and serve them with a Spout. Includes distinct fluids and buckets, plus Farmer's Delight support."
+}
